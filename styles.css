@@ -195,7 +195,12 @@ img.headshot-wrap {
 /* Footer Section */
 
 .social-icon {
-  margin: 20px 10px;
+  margin: .75em .5em .25em .5em;
+}
+
+p.footer_margin {
+  margin-bottom: 0;
+  padding-bottom: .5em;
 }
 
 /* Mobile Responsiveness */
@@ -204,6 +209,9 @@ img.headshot-wrap {
     width: auto;
   }
 
+  /* ----------------------------------------------------------- */
+  /* Main Page Mobile */
+  /* ----------------------------------------------------------- */
   #title {
     text-align: center;
   }
@@ -270,15 +278,129 @@ img.headshot-wrap {
   .social-icon {
     font-size: 2rem;
   }
+
+  /* Footer */
+
+  /* ----------------------------------------------------------- */
+  /* About Page Mobile */
+  /* ----------------------------------------------------------- */
+
+  img.about_section_photo {
+    width: 75%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  /* ----------------------------------------------------------- */
+  /* Events Page Mobile */
+  /* ----------------------------------------------------------- */
+
+  .calendar {
+    height: 75%;
+    padding-bottom: 4rem;
+  }
+
+  /* ----------------------------------------------------------- */
+  /* FAQ Page Mobile */
+  /* ----------------------------------------------------------- */
+
+  .question-text {
+    font-size: 1.75em;
+  }
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
   html,
   body {
     width: 100%;
     overflow-x: hidden;
   }
+}
+
+/* ----------------------------------------------------------- */
+/* About Page CSS */
+/* ----------------------------------------------------------- */
+
+img.about_section_photo {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.h2_about_section {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.p_about_section {
+  text-align: center;
+  padding: 3em;
+}
+
+.jami-quote {
+  text-indent: 30px;
+  font-style: italic;
+}
+
+.about_section_hyperlink {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------- */
+/* Tech Page CSS */
+/* ----------------------------------------------------------- */
+
+div.tech_coming_soon {
+  height: 25em;
+  background-color: black;
+}
+
+.h1_tech_section {
+  color: white;
+  margin-top: 3em;
+}
+
+/* ----------------------------------------------------------- */
+/* Testimonial Page CSS */
+/* ----------------------------------------------------------- */
+
+.testimonial_section {
+  background-color: black;
+}
+
+.test_video_left {
+  padding-bottom: 2.5em;
+}
+
+.test_video_right {
+  padding-bottom: 2.5em;
+}
+
+/* ----------------------------------------------------------- */
+/* FAQ Page CSS */
+/* ----------------------------------------------------------- */
+
+#faq_section {
+  padding: 3% 13%;
+}
+
+.question-text {
+  font-weight: bold;
+  color: rgb(91, 123, 144);
+}
+
+/* ----------------------------------------------------------- */
+/* Events Page CSS */
+/* ----------------------------------------------------------- */
+
+.calendar {
+  background-color: black;
+  padding-bottom: 4em;
 }
